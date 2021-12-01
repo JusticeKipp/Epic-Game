@@ -6,11 +6,13 @@
     </head>
     <body>
         <div class="StoryBox">
-            <h1 class="text"></h1>
+            <ul>
+                <li><h1 id="text"></h1></li>
+            </ul>
         </div>
         <div class="PlayBox">
-            <button id="fight">Fight</button>
-            <button id="move">Move</button>
+            <button onclick="typeWriter(), createListItem()" id="fight">Fight</button>
+            <button onclick="typeWriter(), createListItem()" id="move">Move</button>
         </div>
         <script src="main.js"></script>
     </body>

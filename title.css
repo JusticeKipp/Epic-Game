@@ -22,3 +22,7 @@ a{
     align-items: center;
     font-size: 40px;
 }
+
+#title {
+    font-family: 'Gaegu', cursive;
+}

@@ -12,6 +12,12 @@ body{
     width: 100%;
     height: 80vh;
     background-color: lightseagreen;
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+#text {
+    margin-left: 5px;
 }
 
 .PlayBox{
