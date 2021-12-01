@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet">
         <title>Tims Journey</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="StoryBox">
+        <a onclick="Sound()" id="startingPage">
+            <div class="title">
+                <h1 id="title">TIM'S JOURNEY!</h1>
+                <p>click anywhere to start</p>
+            </div>
+            </a>
+        <div id="StoryBox">
             <ul>
                 <li id="text"></h1></li>
             </ul>
         </div>
-        <div class="PlayBox">
-            <button onclick="typeWriter(), createListItem()" id="fight">Fight</button>
-            <button onclick="typeWriter(), createListItem()" id="move">Move</button>
+        <div id="PlayBox">
+            <button onclick=" createListItem()" id="fight">Fight</button>
+            <button onclick=" createListItem()" id="move">Move</button>
         </div>
         <script src="main.js"></script>
     </body>
