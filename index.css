@@ -1,7 +1,19 @@
-*{
+body{
     background-color: black;
-    border-spacing: 0%;
     padding: 0;
     margin: 0;
     color: white;
+}
+
+.StoryBox{
+    width: 100%;
+    height: 80vh;
+    border: .1px black solid;
+    background-color: lightseagreen;
+}
+
+.PlayBox{
+    width: 100%;
+    height: 20vh;
+    border: .1px black solid;
 }
