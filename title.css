@@ -11,6 +11,7 @@ body{
 a{
     text-decoration: none;
     color: white;
+    cursor: default;
 }
 
 .title{
@@ -21,4 +22,8 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 40px;
+}
+
+#title {
+    font-family: 'Gaegu', cursive;
 }
