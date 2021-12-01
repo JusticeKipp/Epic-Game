@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Lorem ipsum typing effect!'; /* The text */
+var txt = 'Scooter'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function createListItem() {
