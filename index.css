@@ -38,7 +38,19 @@ body{
 }
 
 .PlayBox button{
-    margin: 2vw;
-    width: 8vw;
-    height: 5vh;
+    margin: 10px;
+    width: 80px;
+    height: 50px;
+}
+
+#fight{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+#move{
+    background-color: lime;
+    border: none;
+    border-radius: 5px;
 }
