@@ -71,8 +71,18 @@ a{
     border-radius: 5px;
 }
 
+#fight:hover {
+    background-color: rgb(207, 21, 21);
+    cursor: pointer;
+}
+
 #move{
     background-color: lime;
     border: none;
     border-radius: 5px;
+}
+
+#move:hover {
+    background-color: rgb(27, 216, 27);
+    cursor: pointer;
 }
