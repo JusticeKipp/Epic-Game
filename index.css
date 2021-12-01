@@ -11,12 +11,19 @@ body{
 .StoryBox{
     width: 100%;
     height: 80vh;
-    /* border: .1px black solid; */
     background-color: lightseagreen;
 }
 
 .PlayBox{
     width: 100%;
     height: 20vh;
-    /* border: .1px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayBox button{
+    margin: 10px;
+    width: 80px;
+    height: 50px;
 }
