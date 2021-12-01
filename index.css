@@ -13,11 +13,20 @@ body{
     height: 80vh;
     background-color: lightseagreen;
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-end;
+}
+
+.StoryBox ul {
+    list-style-type: none;
+}
+
+.StoryBox li {
+    margin-left: 2vw;
+    font-size: 24pt;
 }
 
 #text {
-    margin-left: 5px;
+    margin-left: 2vw;
 }
 
 .PlayBox{
@@ -29,7 +38,7 @@ body{
 }
 
 .PlayBox button{
-    margin: 10px;
-    width: 80px;
-    height: 50px;
+    margin: 2vw;
+    width: 8vw;
+    height: 5vh;
 }
