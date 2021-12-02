@@ -87,6 +87,16 @@ a{
     cursor: pointer;
 }
 
-#plotline{
-    font-size: 12px;
+#page2 {
+    font-size: 24pt;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#plotLine {
+    width: 75vw;
+    text-align: center;
 }

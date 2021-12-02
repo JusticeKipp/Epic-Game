@@ -3,14 +3,18 @@ let txt = ''; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function createListItem() {
-   // if (document.querySelector('div').removeAttribute('id') != null) {
-   // document.querySelector('li').removeAttribute('id');
-   // }
+   //checks if the id text exists and removes it 
+   if (document.getElementById('text') != undefined) {
+      document.querySelector('li').removeAttribute('id');
+   }
+   //creates a new list item
    let node = document.createElement('li');
+   //gives new list item the id of text
    node.setAttribute('id', "text")
-   node.appendChild(document.createTextNode(''));
-   document.querySelector('ul').appendChild(node);
+   //defines variable txt as 
    txt = "pizza";
+   // node.appendChild(document.createTextNode(txt));
+   document.querySelector('ul').appendChild(node);
 
    function typeWriter() {
       if (i < txt.length) {
@@ -31,6 +35,11 @@ function Sound() {
    introSound.play();
    gameMusic.play();
    document.getElementById("startingPage").style.display = "none";
-   document.getElementById("PlayBox").style.display = "flex";
+   document.getElementById("page2").style.display = "flex";
+}
+
+function Intro() {
+   document.getElementById("page2").style.display = "none";
    document.getElementById("StoryBox").style.display = "flex";
+   document.getElementById("PlayBox").style.display = "flex";
 }
