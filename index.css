@@ -5,7 +5,7 @@
 
 body{
     color: white;
-    background-color: lightseagreen; 
+    background-color: #37b6f6; 
 }
 
 a{
@@ -56,7 +56,7 @@ a{
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #4542b9;
 }
 
 #PlayBox button{
