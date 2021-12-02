@@ -25,11 +25,11 @@ function createListItem() {
 // function typeWriter() {
 // }
 let introSound = new Audio("voicebooking-speech.mp3");
-let gameMusic = new Audio("Game-Menu_Looping.mp3")
+let gameMusic = new Audio("Guitar-Gentle.mp3");
 gameMusic.loop = true;
 function Sound() {
-   // introSound.play();
-   // gameMusic.play();
+   introSound.play();
+   gameMusic.play();
    document.getElementById("startingPage").style.display = "none";
    document.getElementById("PlayBox").style.display = "flex";
    document.getElementById("StoryBox").style.display = "flex";
