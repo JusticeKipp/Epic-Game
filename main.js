@@ -5,7 +5,7 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 function createListItem() {
    //checks if the id text exists and removes it 
    if (document.getElementById('text') != undefined) {
-      document.querySelector('li').removeAttribute('id');
+      document.getElementById('text').removeAttribute('id');
    }
    //creates a new list item
    let node = document.createElement('li');
@@ -13,8 +13,11 @@ function createListItem() {
    node.setAttribute('id', "text")
    //defines variable txt as 
    txt = "pizza";
+   //adds the list item to the ul tag
    // node.appendChild(document.createTextNode(txt));
    document.querySelector('ul').appendChild(node);
+
+   i = 0;
 
    function typeWriter() {
       if (i < txt.length) {
