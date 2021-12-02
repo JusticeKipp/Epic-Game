@@ -86,3 +86,7 @@ a{
     background-color: rgb(27, 216, 27);
     cursor: pointer;
 }
+
+#plotline{
+    font-size: 12px;
+}
