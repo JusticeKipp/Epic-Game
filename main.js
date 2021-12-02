@@ -1,23 +1,31 @@
 var i = 0;
-var txt = ''; /* The text */
+let txt = ''; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function createListItem() {
+   // if (document.querySelector('div').removeAttribute('id') != null) {
+   // document.querySelector('li').removeAttribute('id');
+   // }
    let node = document.createElement('li');
-   node.appendChild(document.createTextNode('Scooter'));
+   node.setAttribute('id', "text")
+   node.appendChild(document.createTextNode(''));
    document.querySelector('ul').appendChild(node);
-   txt = node.innerHTML;
-   if (i < txt.length) {
-      document.getElementById("text").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+   txt = "pizza";
+
+   function typeWriter() {
+      if (i < txt.length) {
+         document.getElementById("text").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+      }
    }
+   typeWriter();
 }
 
 // function typeWriter() {
 // }
 let introSound = new Audio("voicebooking-speech.mp3");
-let gameMusic = new Audio("Game-Menu_Looping.mp3")
+let gameMusic = new Audio("Guitar-Gentle.mp3");
 gameMusic.loop = true;
 function Sound() {
    introSound.play();
