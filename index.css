@@ -37,7 +37,7 @@ a{
 
 #StoryBox ul {
     list-style-type: none;
-    max-height: 75vh;
+    max-height: 80vh;
     overflow-y: hidden;
 }
 
@@ -99,4 +99,20 @@ a{
 #plotLine {
     width: 75vw;
     text-align: center;
+}
+
+#plotContinue {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#sound {
+    display: none;
+}
+
+#soundButton {
+    position: absolute;
+    font-size: 38pt;
+    margin-top: 2vh;
+    margin-left: 95vw;
 }

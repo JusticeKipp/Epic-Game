@@ -8,21 +8,25 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div id="sound">
+            <a onclick="muteMusic()" id="soundButton"><ion-icon title="Mute" name="volume-high-outline"></ion-icon></a>
+        </div>
         <a onclick="Sound()" id="startingPage">
             <div class="title">
                 <h1 id="title">TIM'S JOURNEY!</h1>
-                <p>click anywhere to start</p>
+                <p>Click anywhere to start</p>
             </div>
         </a>
         <a onclick="Intro()" id="page2">
             <section id="storyPlot">
                 <p id="plotLine">
-                    It's a slow day at Tim's house. Tim has been in his room board all day.
-                    He is laying on his bed waiting for something fun to come along. Rufus, 
-                    Tim's dog, slowly walked into Tim's room carying a stick. Tim look at his Rufus
-                    then he looked at the stick and he smiled and said "Come on Rufus, we are going on
+                    It was a slow day at Tim's house. Tim was at home with nothing to do.
+                    He layed on his bed waiting for something fun to come along. Rufus, 
+                    Tim's dog, slowly entered Tim's room carying a stick. Tim looked at Rufus,
+                    then at the stick. He smiled and said "Come on Rufus, we are going on
                     a journey!"
                 </p>
+                <p id="plotContinue">Click anywhere to continue</p>
             </section>
         </a>
         
@@ -36,5 +40,7 @@
             <button onclick=" createListItem()" id="move">Move</button>
         </div>
         <script src="main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
