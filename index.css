@@ -1,118 +1,118 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    color: white;
-    background-color: #37b6f6; 
+body {
+	color: white;
+	background-color: #37b6f6;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    cursor: default;
+a {
+	text-decoration: none;
+	color: white;
+	cursor: default;
 }
 
-.title{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+.title {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
 }
 
 #title {
-    font-family: 'Gaegu', cursive;
+	font-family: "Gaegu", cursive;
 }
 
-#StoryBox{
-    width: 100%;
-    height: 80vh;
-    display: none;
-    align-items: flex-end;
+#StoryBox {
+	width: 100%;
+	height: 80vh;
+	display: none;
+	align-items: flex-end;
 }
 
 #StoryBox ul {
-    list-style-type: none;
-    max-height: 80vh;
-    overflow-y: hidden;
+	list-style-type: none;
+	/* max-height: 80vh; */
+	overflow-y: hidden;
 }
 
 #StoryBox li {
-    margin-left: 2vw;
-    font-size: 24pt;
+	margin-left: 2vw;
+	font-size: 24pt;
 }
 
 #text {
-    margin-left: 2vw;
+	margin-left: 2vw;
 }
 
-#PlayBox{
-    width: 100%;
-    height: 20vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #4542b9;
+#PlayBox {
+	width: 100%;
+	height: 20vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: #4542b9;
 }
 
-#PlayBox button{
-    margin: 2vw;
-    width: 5vw;
-    height: 5vh;
+#PlayBox button {
+	margin: 2vw;
+	width: 5vw;
+	height: 5vh;
 }
 
-#fight{
-    background-color: red;
-    border: none;
-    border-radius: 5px;
+#fight {
+	background-color: red;
+	border: none;
+	border-radius: 5px;
 }
 
 #fight:hover {
-    background-color: rgb(207, 21, 21);
-    cursor: pointer;
+	background-color: rgb(207, 21, 21);
+	cursor: pointer;
 }
 
-#move{
-    background-color: lime;
-    border: none;
-    border-radius: 5px;
+#move {
+	background-color: lime;
+	border: none;
+	border-radius: 5px;
 }
 
 #move:hover {
-    background-color: rgb(27, 216, 27);
-    cursor: pointer;
+	background-color: rgb(27, 216, 27);
+	cursor: pointer;
 }
 
 #page2 {
-    font-size: 24pt;
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+	font-size: 24pt;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 }
 
 #plotLine {
-    width: 75vw;
-    text-align: center;
+	width: 75vw;
+	text-align: center;
 }
 
 #plotContinue {
-    margin-top: 5vh;
-    text-align: center;
+	margin-top: 5vh;
+	text-align: center;
 }
 
 #sound {
-    display: none;
+	display: none;
 }
 
 #soundButton {
-    position: absolute;
-    font-size: 38pt;
-    margin-top: 2vh;
-    margin-left: 95vw;
+	position: absolute;
+	font-size: 38pt;
+	margin-top: 2vh;
+	margin-left: 95vw;
 }
