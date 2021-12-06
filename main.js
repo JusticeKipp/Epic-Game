@@ -3,6 +3,16 @@ let txt = "";
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 let paused = false;
 
+//an array containing all the story lines and their corresponding buttons
+var storyArray = [
+	{
+		text: "You approach a giant bear. What do you do?",
+		btn1: "Attack",
+		btn2: "Run",
+		donetext: "You fought the bear with ease"
+	}
+];
+
 function createListItem() {
 	//checks if the id text exists and removes it
 	if (document.getElementById("text") != undefined) {
@@ -12,8 +22,9 @@ function createListItem() {
 	let node = document.createElement("li");
 	//gives new list item the id of text
 	node.setAttribute("id", "text");
-	//defines variable txt as
-	txt = "pi";
+	//defines variable txt
+	var randomItem = storyArray[Math.floor(Math.random()*storyArray.length)];
+	txt = randomItem.text
 	//adds the list item to the ul tag
 	document.querySelector("ul").appendChild(node);
 
@@ -29,16 +40,18 @@ function createListItem() {
 
 	//function for making the typing effect of text
 	function typeWriter() {
-		document.getElementById("fight").style.display = "none";
-		document.getElementById("move").style.display = "none";
+		document.getElementById("btn1").style.display = "none";
+		document.getElementById("btn2").style.display = "none";
 		if (i < txt.length) {
 			document.getElementById("text").innerHTML += txt.charAt(i);
 			i++;
 			setTimeout(typeWriter, speed);
 		}
 		if (i == txt.length) {
-			document.getElementById("fight").style.display = "block";
-			document.getElementById("move").style.display = "block";
+			document.getElementById("btn1").innerHTML = randomItem.btn1
+			document.getElementById("btn2").innerHTML = randomItem.btn2
+			document.getElementById("btn1").style.display = "block";
+			document.getElementById("btn2").style.display = "block";
 		}
 	}
 	typeWriter();

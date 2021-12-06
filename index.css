@@ -30,7 +30,7 @@ a {
 
 #StoryBox {
 	width: 100%;
-	height: 80vh;
+	height: 81vh;
 	display: none;
 	align-items: flex-end;
 }
@@ -52,11 +52,12 @@ a {
 
 #PlayBox {
 	width: 100%;
-	height: 20vh;
+	height: 18vh;
 	display: none;
 	justify-content: center;
 	align-items: center;
 	background-color: #4542b9;
+	border-top: 10px double rgb(235, 235, 20);
 }
 
 #PlayBox button {
@@ -65,24 +66,24 @@ a {
 	height: 5vh;
 }
 
-#fight {
+#btn1 {
 	background-color: red;
 	border: none;
 	border-radius: 5px;
 }
 
-#fight:hover {
+#btn1:hover {
 	background-color: rgb(207, 21, 21);
 	cursor: pointer;
 }
 
-#move {
+#btn2 {
 	background-color: lime;
 	border: none;
 	border-radius: 5px;
 }
 
-#move:hover {
+#btn2:hover {
 	background-color: rgb(27, 216, 27);
 	cursor: pointer;
 }
