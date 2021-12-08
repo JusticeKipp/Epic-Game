@@ -38,6 +38,10 @@ function createListItem() {
 
 	i = 0;
 
+	if (txt == randomItem.text) {
+		txt = randomItem.donetext
+	}
+
 	//function for making the typing effect of text
 	function typeWriter() {
 		document.getElementById("btn1").style.display = "none";
